@@ -2,7 +2,13 @@
     <div class="col-xs-12">
       <p>Add new Servers or blueprints!</p>
       <label>Server Name</label>
+      
+      <!-- this local references  are using to access propety
+      only when we click button 
+    ====> Note:-we can use this local reference in any HTML Element <====
+    -->
       <!-- <input type="text" class="form-control" [(ngModel)]="newServerName"> -->
+      
       <input type="text" 
       class="form-control" 
       #serverNameInput>
@@ -29,6 +35,5 @@
       </button>
       
     </div>
-    <p class="cockpit-para">cockpitParagrap</p>
   </div>
    
