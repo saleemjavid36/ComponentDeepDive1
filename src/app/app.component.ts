@@ -14,6 +14,13 @@ export class AppComponent  {
 
   // console.log()
 
+  onChangeFirsts(){
+    this.serverElements[0].name='!Changes'
+  }
+  onDestroyFirsts(){
+    this.serverElements[0].name='!Changes'
+  }
+  
   onServerAdded(serverData:{serverName:string,serverContent:string}){
     this.serverElements.push({
       type:'server',
@@ -28,6 +35,8 @@ export class AppComponent  {
       name:bluePrintData.serverName,
       content:bluePrintData.serverContent
     })
+
+  
   }
   
 
